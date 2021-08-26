@@ -20,7 +20,7 @@ class Workshop extends StatelessWidget {
             Column(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                SizedBox(
+                SizedBox( 
                   height: 20,
                 ),
                 Image.asset(
