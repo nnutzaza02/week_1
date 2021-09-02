@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../config/constant.dart';
+
 class Workshop extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -30,7 +32,7 @@ class Workshop extends StatelessWidget {
                 Text(
                   "Welcome to KMUTNB",
                   style: TextStyle(
-                    color: Colors.amber[900],
+                    color: secondColor,
                     fontSize: 32,
                     fontWeight: FontWeight.bold,
                   ),
@@ -47,16 +49,17 @@ class Workshop extends StatelessWidget {
              
             ElevatedButton(
             style: ElevatedButton.styleFrom(
-              primary: Colors.amber[900],
+              primary: oColor,
               padding: EdgeInsets.fromLTRB(120, 15, 120, 15),
              // padding: EdgeInsets.all(20),
               shape: StadiumBorder(),
             ),
-            child: Text("LOGIN",
+            child: Text("SIGNIN",
             style: TextStyle(fontSize: 16),
             ),
             onPressed: () {
               print("Hello KMUTNB");
+              Navigator.pushNamed(context, 'Login');
             },
             ),
             SizedBox(
@@ -64,16 +67,17 @@ class Workshop extends StatelessWidget {
               ),
              ElevatedButton(
             style: ElevatedButton.styleFrom(
-              primary: Colors.amber[900],
+              primary: oColor,
               padding: EdgeInsets.fromLTRB(120, 15, 120, 15),
              // padding: EdgeInsets.all(20),
               shape: StadiumBorder(),
             ),
-            child: Text("SignUp",
+            child: Text("SIGNUP",
             style: TextStyle(fontSize: 16),
             ),
             onPressed: () {
               print("Good Luck KMUTNB");
+              Navigator.pushNamed(context, 'Register');
        },
                 ),
               ],
